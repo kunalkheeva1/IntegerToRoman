@@ -28,10 +28,11 @@ public class IntegerToRoman {
             //runs until the num becomes less than any number in intCode
             while(num>=intCode[i]){
                 sb.append(code[i]);
+                //after appending subtract the number from provided number and then back to the loop
+                //until the number becomes less than num
                 num = num- intCode[i];
             }
-        }return sb.toString();
-
+        }return sb.toString();   // then return my sb, which has my desired value of int to roman
     }
 
 
